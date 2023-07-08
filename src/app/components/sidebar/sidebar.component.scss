@@ -8,6 +8,7 @@
   position: relative;
   left: 0;
   transition: left 0.4s ease-in-out;
+  z-index: 100;
 }
 
 .highlight {
