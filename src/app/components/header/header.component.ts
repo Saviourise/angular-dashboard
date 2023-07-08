@@ -7,9 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  page = 'dashboard';
   constructor(private router: Router) {
-    this.page = this.router.url === '/' ? 'dashboard' : this.router.url;
     router.events.subscribe((val) => {
       if (val instanceof NavigationEnd) {
         const nav: any = document.getElementById('sidebar_component');

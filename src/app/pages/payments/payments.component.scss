@@ -10,6 +10,23 @@
   padding: 20px;
 }
 
+.header_payments {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.header_payments h3 {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
 .card {
   width: 350px;
   height: 180px;
@@ -123,9 +140,6 @@
 }
 
 .add_card {
-  position: absolute;
-  right: 0;
-  top: 20px;
   background-color: #0076e4;
   color: #fff;
   padding: 10px 20px;
