@@ -1,0 +1,42 @@
+<div class="sidebar_component close" id="sidebar_component">
+  <a [routerLink]="['/']" class="sidebar_component__logo">
+    <img src="assets/logo.png" alt="logo" />
+    <span>Birdie</span>
+  </a>
+  <ul>
+    <li>
+      <div class="highlight"></div>
+      <a
+        class="menu_item"
+        [routerLink]="['/']"
+        [routerLinkActiveOptions]="{ exact: true }"
+        routerLinkActive="active"
+        >Home
+      </a>
+    </li>
+    <li>
+      <div class="highlight"></div>
+      <a
+        class="menu_item"
+        [routerLink]="['/payments']"
+        routerLinkActive="active"
+        >Payments
+      </a>
+    </li>
+    <li>
+      <div class="highlight"></div>
+      <a class="menu_item" [routerLink]="['/profile']" routerLinkActive="active"
+        >Profile
+      </a>
+    </li>
+    <li>
+      <div class="highlight"></div>
+      <a
+        class="menu_item"
+        [routerLink]="['/settings']"
+        routerLinkActive="active"
+        >Settings
+      </a>
+    </li>
+  </ul>
+</div>

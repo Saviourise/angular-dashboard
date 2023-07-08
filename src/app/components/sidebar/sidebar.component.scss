@@ -1,0 +1,103 @@
+.sidebar_component {
+  background-color: #232a35;
+  color: #4b596c;
+  padding: 10px;
+  border-radius: 10px;
+  width: 250px;
+  height: calc(100vh - 40px);
+  position: relative;
+  left: 0;
+  transition: left 0.4s ease-in-out;
+}
+
+.highlight {
+  display: block;
+  background: #0076e4;
+  position: absolute;
+  z-index: 1;
+  height: 50px;
+  border-radius: 10px;
+  transition: width 0.3s ease-in-out;
+  pointer-events: none;
+  width: 0;
+}
+
+.sidebar_component .menu_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  height: 50px;
+  padding: 0 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #4b596c;
+  z-index: 2;
+  position: relative;
+}
+
+.sidebar_component li:hover .highlight {
+  width: 90%;
+}
+
+.sidebar_component li .menu_item::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-right: 10px;
+}
+
+.sidebar_component li:nth-of-type(1) .menu_item::before {
+  content: "\f015";
+}
+
+.sidebar_component li:nth-of-type(2) .menu_item::before {
+  content: "\f09d";
+}
+
+.sidebar_component li:nth-of-type(3) .menu_item::before {
+  content: "\f007";
+}
+
+.sidebar_component li:nth-of-type(4) .menu_item::before {
+  content: "\f013";
+}
+
+.sidebar_component .menu_item.active {
+  background-color: #0077e4;
+  color: #fff;
+}
+
+.sidebar_component__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.sidebar_component__logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar_component.close {
+    left: -250px;
+  }
+  .sidebar_component {
+    left: 20px;
+    position: absolute;
+    top: 100px;
+    width: 250px;
+    height: calc(100vh - 120px);
+  }
+}

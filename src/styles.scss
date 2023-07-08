@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.body {
+  padding: 20px;
+  background-color: #0e1115;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .body {
+    gap: 0;
+  }
+}

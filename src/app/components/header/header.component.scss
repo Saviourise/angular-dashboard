@@ -1,0 +1,97 @@
+.header_component {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #232a35;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.header_component__title {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+
+.header_component__title > input {
+  background-color: #4b596c;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  padding: 10px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.header_component__title > span::after {
+  content: "\f002";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #fff;
+  font-size: 0.8rem;
+  margin-left: -30px;
+  cursor: pointer;
+}
+
+.header_component__title > input::placeholder {
+  color: #bbb;
+}
+
+.header_component__profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header_component__profile > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+.header_component .icon {
+  display: none;
+  transition: all 0.3s ease-in-out;
+  transform: rotate(0deg);
+  cursor: pointer;
+}
+
+.header_component .icon.toggle {
+  transform: rotate(90deg);
+}
+
+.header_component .icon:hover {
+  color: #4b596c;
+}
+
+.header_component .icon::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0c9";
+}
+
+@media screen and (max-width: 768px) {
+  .header_component .icon {
+    display: block;
+  }
+  .header_component__title > input {
+    width: 150px;
+  }
+  .header_component__profile {
+    font-size: 12px;
+  }
+  .header_component__profile > img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+  }
+}
