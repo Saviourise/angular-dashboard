@@ -14,9 +14,143 @@
   left: 250px;
 }
 
+.profile_component__container__left {
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #232a35;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.transactions_container {
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #232a35;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  overflow: hidden;
+}
+
+.products_container {
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #232a35;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.transaction {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.product {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.product__image img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.transaction__left__name,
+.product__details__name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.transaction__left__status {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.complete {
+  color: #00e676;
+}
+
+.pending {
+  color: #ff9800;
+}
+
+.fail {
+  color: #ff1744;
+}
+
+.transaction__right__date,
+.product__details__status {
+  font-size: 12px;
+  color: #4b596c;
+}
+
+.transaction__right__amount {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.product__details__price {
+  font-size: 13px;
+  font-weight: 500;
+  color: #0077e4;
+}
+
+.profile_component__container__left__image img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile_component__container__left__name {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.profile_component__container__left__email {
+  font-size: 14px;
+  color: #4b596c;
+}
+
+.profile_component__container__left__email a {
+  color: #4b596c;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 860px) {
   .profile_component {
     width: 100%;
     left: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .profile_component__container__left {
+    flex-direction: column;
+  }
+  .transaction__right__amount,
+  .product__details__price {
+    font-size: 14px;
   }
 }
