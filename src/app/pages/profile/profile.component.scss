@@ -122,6 +122,13 @@
   border-radius: 50%;
 }
 
+.profile_text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
 .profile_component__container__left__name {
   font-size: 20px;
   font-weight: 500;
