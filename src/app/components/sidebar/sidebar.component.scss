@@ -5,8 +5,8 @@
   border-radius: 10px;
   width: 250px;
   height: calc(100vh - 40px);
-  position: relative;
-  left: 0;
+  position: fixed;
+  left: 20px;
   transition: left 0.4s ease-in-out;
   z-index: 100;
 }
@@ -90,13 +90,12 @@ ul li {
   list-style: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 860px) {
   .sidebar_component.close {
     left: -250px;
   }
   .sidebar_component {
     left: 20px;
-    position: absolute;
     top: 100px;
     width: 250px;
     height: calc(100vh - 120px);

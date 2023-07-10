@@ -7,6 +7,10 @@
   color: #fff;
   padding: 10px 20px;
   border-radius: 10px;
+  width: calc(100% - 310px);
+  position: fixed;
+  left: 290px;
+  z-index: 1000;
 }
 
 .header_component__title {
@@ -93,5 +97,9 @@
     width: 30px;
     height: 30px;
     margin-right: 5px;
+  }
+  .header_component {
+    width: calc(100% - 40px);
+    left: 20px;
   }
 }

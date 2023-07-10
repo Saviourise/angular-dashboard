@@ -1,3 +1,52 @@
 <div class="home_component">
-    <h3>Dashboard</h3>
+  <h3>Dashboard</h3>
+  <section class="cards">
+    <div class="card">
+      <div class="card__header">
+        <p>Users</p>
+        <p class="price" id="price1">546</p>
+      </div>
+      <div class="card__body">
+        <p>
+          This is all the users that are registered (active and inactive) on
+          your current and previous platforms.
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card__header">
+        <p>Transactions</p>
+        <p class="price" id="price2">753</p>
+      </div>
+      <div class="card__body">
+        <p>
+          This is the total number of transactions (successful and failed) that
+          have been made on your platforms.
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card__header">
+        <p>Products</p>
+        <p class="price" id="price3">1,563</p>
+      </div>
+      <div class="card__body">
+        <p>
+          This is the total number of products that have been created on your
+          platforms by both you and your users.
+        </p>
+      </div>
+    </div>
+  </section>
+  <div class="charts">
+  <div class="divChart">
+    <canvas id="myChart"></canvas>
+  </div>
+  <div class="divChart">
+    <canvas id="myChart2"></canvas>
+  </div>
+  <div class="divChart">
+    <canvas id="myChart3"></canvas>
+  </div>
+  </div>
 </div>

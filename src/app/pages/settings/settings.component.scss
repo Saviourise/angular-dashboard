@@ -1,11 +1,22 @@
 .settings_component h3 {
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 400;
-    text-transform: capitalize;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: capitalize;
 }
 
 .settings_component {
-    padding: 20px 0;
-    min-height: calc(100vh - 80px);
+  padding: 20px 0;
+  min-height: calc(100vh - 40px);
+  width: calc(100% - 250px);
+  position: relative;
+  padding-top: 80px;
+  left: 250px;
+}
+
+@media screen and (max-width: 860px) {
+  .settings_component {
+    width: 100%;
+    left: 0;
+  }
 }
