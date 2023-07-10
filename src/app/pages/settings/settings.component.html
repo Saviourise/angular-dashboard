@@ -1,3 +1,38 @@
 <div class="settings_component">
-    <h3>Settings</h3>
+  <h3>Profile Settings</h3>
+  <div class="settings_component__container">
+    <input
+      type="file"
+      id="image"
+      class="image_input"
+      accept="image/gif, image/jpeg, image/png"
+    />
+    <label for="image">
+      <div class="image_container" id="image_container">
+        Add Profile Image
+      </div></label
+    >
+    <div class="settings_profile_inputs">
+      <input type="text" placeholder="Name" />
+      <input type="email" placeholder="Email" />
+      <button>Save</button>
+    </div>
+  </div>
+  <h3>Upload Product</h3>
+  <div class="settings_product__container">
+    <div class="settings_product__container__left">
+      <input type="file" id="product_image" class="image_input" />
+      <label for="product_image">
+        <div class="image_container" id="product_image_container">
+          Add Product Image
+        </div></label
+      >
+    </div>
+    <div class="settings_product__container__right">
+      <input type="text" placeholder="Product Name" />
+      <input type="text" placeholder="Product Price" />
+      <input type="text" placeholder="Product Description" />
+      <button>Save</button>
+    </div>
+  </div>
 </div>
