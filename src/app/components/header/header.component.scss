@@ -7,10 +7,19 @@
   color: #fff;
   padding: 10px 20px;
   border-radius: 10px;
+  position: relative;
   width: calc(100% - 310px);
-  position: fixed;
   left: 290px;
-  z-index: 1000;
+}
+
+.header_component_container {
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  background-color: #0e1115;
+  top: 0;
+  left: 0;
+  padding: 20px 0;
 }
 
 .header_component__title {
@@ -83,7 +92,7 @@
   content: "\f0c9";
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 860px) {
   .header_component .icon {
     display: block;
   }
@@ -101,5 +110,11 @@
   .header_component {
     width: calc(100% - 40px);
     left: 20px;
+  }
+  .header_component__title > input {
+    display: none;
+  }
+  .header_component__title > span::after {
+    content: "";
   }
 }

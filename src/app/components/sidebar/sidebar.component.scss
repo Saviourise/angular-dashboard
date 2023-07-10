@@ -49,19 +49,19 @@
   padding-right: 10px;
 }
 
-.sidebar_component li:nth-of-type(1) .menu_item::before {
+.sidebar_component li:nth-of-type(2) .menu_item::before {
   content: "\f015";
 }
 
-.sidebar_component li:nth-of-type(2) .menu_item::before {
+.sidebar_component li:nth-of-type(3) .menu_item::before {
   content: "\f09d";
 }
 
-.sidebar_component li:nth-of-type(3) .menu_item::before {
+.sidebar_component li:nth-of-type(4) .menu_item::before {
   content: "\f007";
 }
 
-.sidebar_component li:nth-of-type(4) .menu_item::before {
+.sidebar_component li:nth-of-type(5) .menu_item::before {
   content: "\f013";
 }
 
@@ -90,6 +90,39 @@ ul li {
   list-style: none;
 }
 
+.search {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.search > input {
+  background-color: #4b596c;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.search > span::after {
+  content: "\f002";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #fff;
+  font-size: 0.8rem;
+  margin-left: -30px;
+  cursor: pointer;
+}
+
+.search > input::placeholder {
+  color: #bbb;
+}
+
 @media screen and (max-width: 860px) {
   .sidebar_component.close {
     left: -250px;
@@ -99,5 +132,8 @@ ul li {
     top: 100px;
     width: 250px;
     height: calc(100vh - 120px);
+  }
+  .search {
+    display: block;
   }
 }

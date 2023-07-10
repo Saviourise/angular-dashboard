@@ -1,12 +1,14 @@
-<div class="header_component">
+<div class="header_component_container">
+  <div class="header_component">
     <p class="icon" (click)="togglenav()"></p>
- 
-  <div class="header_component__title">
-    <input type="text" placeholder="Search" />
-    <span></span>
+
+    <div class="header_component__title">
+      <input type="text" placeholder="Search" />
+      <span></span>
+    </div>
+    <a [routerLink]="['/profile']" class="header_component__profile">
+      <img src="assets/profile.jpg" alt="profile" />
+      <span>John Doe</span>
+    </a>
   </div>
-  <a [routerLink]="['/profile']" class="header_component__profile">
-    <img src="assets/profile.jpg" alt="profile" />
-    <span>John Doe</span>
-  </a>
 </div>
